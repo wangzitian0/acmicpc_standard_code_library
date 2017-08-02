@@ -1,0 +1,72 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{geometry,listings,setspace,multicol,fancyhdr}
+\geometry{left=2.5cm,right=2cm,top=2cm,bottom=2cm}
+
+\pagestyle{fancy}
+\lhead{Beijing University of Posts and Telecommunications}
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{heheda}
+
+\begin{document}
+\begin{spacing}{0.5}
+	\title{ACMICPC Standard Code Library}
+	\author{Beijing University of Posts and Telecommunications}
+	\date{April 29, 2016}
+	\maketitle
+	\newpage
+
+	\tableofcontents
+	\newpage
+
+	%\begin{multicols}{2}
+	\section{Math}
+		\subsection{fft}
+			\lstinputlisting[numbers=left]{./src/Math/fft.cpp}
+	\section{String}
+		\subsection{sa}
+			\lstinputlisting[numbers=left]{./src/String/sa.cpp}
+		\subsection{sam}
+			\lstinputlisting[numbers=left]{./src/String/sam.cpp}
+		\subsection{kmp}
+			\lstinputlisting[numbers=left]{./src/String/kmp.cpp}
+		\subsection{ac}
+			\lstinputlisting[numbers=left]{./src/String/ac.cpp}
+	\section{Geometry}
+		\subsection{c2c}
+			\lstinputlisting[numbers=left]{./src/Geometry/c2c.cpp}
+		\subsection{c2l}
+			\lstinputlisting[numbers=left]{./src/Geometry/c2l.cpp}
+		\subsection{halfplaneintersection}
+			\lstinputlisting[numbers=left]{./src/Geometry/halfplaneintersection.cpp}
+	\section{DataStruct}
+		\subsection{lct}
+			\lstinputlisting[numbers=left]{./src/DataStructure/lct.cpp}
+		\subsection{kdt}
+			\lstinputlisting[numbers=left]{./src/DataStructure/kdt.cpp}
+	\section{Graph}
+		\subsection{targan point connecting}
+			\lstinputlisting[numbers=left]{./src/Graph/targanpointconnecting.cpp}
+		\subsection{cut point bridge}
+			\lstinputlisting[numbers=left]{./src/Graph/cutpointbridge.cpp}
+		\subsection{hungary}
+			\lstinputlisting[numbers=left]{./src/Graph/hungary.cpp}
+		\subsection{maxflow}
+			\lstinputlisting[numbers=left]{./src/Graph/maxflow.cpp}
+		\subsection{costflow}
+			\lstinputlisting[numbers=left]{./src/Graph/costflow.cpp}
+		\subsection{min tree graph}
+			\lstinputlisting[numbers=left]{./src/Graph/mintreegraph.cpp}
+		\subsection{flowertree}
+			\lstinputlisting[numbers=left]{./src/Graph/flowertree.cpp}
+		\subsection{2-sat}
+			\lstinputlisting[numbers=left]{./src/Graph/2-sat.cpp}
+		\subsection{km}
+			\lstinputlisting[numbers=left]{./src/Graph/km.cpp}
+	%\end{multicols}
+
+\end{spacing}
+\end{document}
