@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 int ch[MAXN][2], pre[MAXN], key[MAXN];
 int add[MAXN], Max[MAXN], rev[MAXN], n;
 bool rt[MAXN];

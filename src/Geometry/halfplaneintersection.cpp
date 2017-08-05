@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 struct Halfplane {
   Point a, b;
   Halfplane() {}

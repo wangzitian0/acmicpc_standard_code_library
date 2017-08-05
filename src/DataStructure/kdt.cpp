@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 bool cmpx(const Node &a, const Node &b) { return a.x < b.x; }
 bool cmpy(const Node &a, const Node &b) { return a.y < b.y; }
 

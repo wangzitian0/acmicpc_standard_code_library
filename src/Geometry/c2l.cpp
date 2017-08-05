@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 Point crosspt(const Point &a, const Point &b, const Point &p, const Point &q) {
   double a1 = (b - a) * (p - a);
   double a2 = (b - a) * (q - a);

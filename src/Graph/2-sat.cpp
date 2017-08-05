@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 const int MAXN = 20020;
 const int MAXM = 100010;
 struct Edge {

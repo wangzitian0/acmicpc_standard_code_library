@@ -1,9 +1,9 @@
 # acmicpc_standard_code_library
 
-## requirements
+## Requirements
 
 - sudo apt-get install texlive-xelatex
 
-## compile
+## Make
 
 - make

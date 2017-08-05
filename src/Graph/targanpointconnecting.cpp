@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 void Tarjan(int u, int pre) {
   Low[u] = DFN[u] = ++Index;
   Stack[top++] = u;

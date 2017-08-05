@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 const int MAXN = 250;
 int N;  // 点的个数,点的编号从1到N
 bool Graph[MAXN][MAXN];

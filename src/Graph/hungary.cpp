@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 bool dfs(int u) {
   for (int i = head[u]; i != -1; i = edge[i].next) {
     int v = edge[i].to;

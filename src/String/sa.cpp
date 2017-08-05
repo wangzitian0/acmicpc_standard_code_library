@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 int r[maxn], wa[maxn], wb[maxn], wv[maxn], ws[maxn], sa[maxn];
 int rank[maxn], height[maxn];
 

@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 const int INF = 0x3f3f3f3f;
 const int MAXN = 1010;
 const int MAXM = 40010;

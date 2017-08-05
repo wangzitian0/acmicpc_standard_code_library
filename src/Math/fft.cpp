@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 #include <bits/stdc++.h>
 using std;
 

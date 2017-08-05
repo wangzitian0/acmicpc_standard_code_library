@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 void init() {
   sz = 1;
   ch[0].init();

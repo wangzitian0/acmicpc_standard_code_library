@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 void copy(int x, int y) {
   pre[x] = pre[y];
   len[x] = len[y];

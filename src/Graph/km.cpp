@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 bool DFS(int x) {
   visx[x] = true;
 

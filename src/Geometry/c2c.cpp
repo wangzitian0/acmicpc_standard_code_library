@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 Point rotate(const Point &p, double cost, double sint) {
   double x = p.x, y = p.y;
   return Point(x * cost - y * sint, x * sint + y * cost);

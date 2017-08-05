@@ -1,5 +1,3 @@
-// Copyright [2017] <dmnsn7>
-
 void getFail() {
   m = strlen(s);
   f[0] = f[1] = 0;
