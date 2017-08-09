@@ -2,8 +2,8 @@
 
 ## Requirements
 
-- sudo apt-get install texlive-xelatex
+* sudo apt-get install texlive-xelatex
 
 ## Make
 
-- make
+* make
