@@ -1,3 +1,13 @@
+// Copyright [2017] <dmnsn7@gmail.com>
+
+#include <bits/stdc++.h>
+
+const int MAXN = 0;
+
+int tot, root, np, tail;
+int cnt[MAXN], son[MAXN][MAXN], gao[MAXN], g[MAXN], b[MAXN], len[MAXN],
+    pre[MAXN];
+
 void copy(int x, int y) {
   pre[x] = pre[y];
   len[x] = len[y];
@@ -62,3 +72,5 @@ void build(int n) {
     son[p][k] = 0;
   }
 }
+
+int main() { return 0; }

@@ -1,5 +1,8 @@
+// Copyright [2017] <dmnsn7@gmail.com>
+
 #include <bits/stdc++.h>
-using std;
+
+using std::swap;
 
 const double PI = acos(-1);
 struct Complex {
@@ -65,3 +68,5 @@ void fft(Complex y[], int len, int on) {
     }
   }
 }
+
+int main() { return 0; }

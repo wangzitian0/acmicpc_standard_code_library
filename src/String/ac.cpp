@@ -1,7 +1,25 @@
+// Copyright [2017] <dmnsn7@gmail.com>
+
+#include <bits/stdc++.h>
+
+using std::queue;
+using std::vector;
+
+struct CH {
+  int fail, isend;
+  vector<int> next;
+  void init() {}
+};
+
+vector<CH> ch;
+
+int sz = 0;
+queue<int> q;
 void init() {
   sz = 1;
   ch[0].init();
 }
+
 void build() {
   queue<int> q;
   ch[0].fail = 0;
@@ -39,3 +57,5 @@ void build() {
     }
   }
 }
+
+int main() { return 0; }

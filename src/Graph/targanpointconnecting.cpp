@@ -1,3 +1,17 @@
+// Copyright [2017] <dmnsn7@gmail.com>
+
+#include <bits/stdc++.h>
+
+const int MAXN = 0;
+
+struct EDGE {
+  int to, next;
+};
+EDGE edge[MAXN];
+
+int top = 0, Index = 0;
+int head[MAXN], Instack[MAXN], Low[MAXN], Stack[MAXN], DFN[MAXN];
+
 void Tarjan(int u, int pre) {
   Low[u] = DFN[u] = ++Index;
   Stack[top++] = u;
@@ -53,7 +67,7 @@ void Tarjan(int u, int pre) {
     scc++;
 
     do {
-      v = Stack[--top];
+      v = Stack[--top];m
       Instack[v] = false;
       Belong[v] = scc;
       num[scc]++;
@@ -61,3 +75,5 @@ void Tarjan(int u, int pre) {
   }
   */
 }
+
+int main() { return 0; }

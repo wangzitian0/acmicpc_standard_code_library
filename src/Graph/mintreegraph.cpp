@@ -1,3 +1,9 @@
+// Copyright [2017] <dmnsn7@gmail.com>
+
+#include <bits/stdc++.h>
+
+using std::swap;
+
 const int INF = 0x3f3f3f3f;
 const int MAXN = 1010;
 const int MAXM = 40010;
@@ -75,3 +81,5 @@ int zhuliu(int root, int n, int m, Edge edge[]) {
 
   return res;
 }
+
+int main() { return 0; }

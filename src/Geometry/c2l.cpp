@@ -1,8 +1,37 @@
+// Copyright [2017] <dmnsn7@gmail.com>
+
+#include <bits/stdc++.h>
+
+using std::min;
+using std::max;
+using std::vector;
+
+const double PI = 3.14;
+
+struct Point {
+  double x, y;
+  Point() {}
+  Point(double _x, double _y) {
+    x = _x;
+    y = _y;
+  }
+
+  double len() const { return sqrt(x * x + y * y); }
+  Point operator-(const Point &b) const { return Point(0, 0); }
+  Point operator*(const double &b) const { return Point(0, 0); }
+  Point operator/(const double &b) const { return Point(0, 0); }
+  double operator*(const Point &b) const { return 0; }
+};
+
+int dlcmp(double x) { return 0; }
+
 Point crosspt(const Point &a, const Point &b, const Point &p, const Point &q) {
   double a1 = (b - a) * (p - a);
   double a2 = (b - a) * (q - a);
   return (p * a2 - q * a1) / (a2 - a1);
 }
+
+double r = 0;
 double sector_area(const Point &a, const Point &b) {
   double theta = atan2(a.y, a.x) - atan2(b.y, b.x);
 
@@ -17,9 +46,10 @@ double sector_area(const Point &a, const Point &b) {
   theta = min(theta, 2 * PI - theta);
   return r * r * theta / 2;
 }
+
 double sqr(double x) { return x * x; }
 void circle_cross_line(Point a, Point b, Point o, double r, Point ret[],
-                       const int &num) {
+                       int num) {
   double x0 = o.x, y0 = o.y;
   double x1 = a.x, y1 = a.y;
   double x2 = b.x, y2 = b.y;
@@ -43,6 +73,7 @@ void circle_cross_line(Point a, Point b, Point o, double r, Point ret[],
     }
   }
 }
+
 double calc(const Point &a, const Point &b) {
   Point p[2];
   int num = 0;
@@ -72,6 +103,9 @@ double calc(const Point &a, const Point &b) {
     }
   }
 }
+
+vector<Point> res;
+int n;
 double area() {
   double ret = 0;
 
@@ -85,3 +119,5 @@ double area() {
 
   return ret;
 }
+
+int main() { return 0; }

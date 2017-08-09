@@ -1,3 +1,14 @@
+// Copyright [2017] <dmnsn7@gmail.com>
+
+#include <bits/stdc++.h>
+
+using std::max;
+using std::swap;
+using std::vector;
+
+const int MAXN = 0;
+const int INF = 0;
+
 int ch[MAXN][2], pre[MAXN], key[MAXN];
 int add[MAXN], Max[MAXN], rev[MAXN], n;
 bool rt[MAXN];
@@ -105,10 +116,9 @@ void mroot(int r) {
   splay(r);
   update_rev(r);
 }
-void lca(const int &u, const int &v) {
+void lca(int u, int v) {
   access(v), v = 0;
 
-  // puts("-------------");display();
   while (u) {
     splay(u);
 
@@ -236,8 +246,6 @@ int main() {
         scanf("%d%d", &x, &y);
         query(x, y);
       }
-
-      // display();
     }
 
     puts("");

@@ -1,5 +1,10 @@
+// Copyright [2017] <dmnsn7@gmail.com>
+
+#include <bits/stdc++.h>
+
+char *s, *f;
 void getFail() {
-  m = strlen(s);
+  int m = strlen(s);
   f[0] = f[1] = 0;
 
   for (int i = 1; i < m; i++) {
@@ -12,3 +17,5 @@ void getFail() {
     f[i + 1] = s[i] == s[j] ? j + 1 : 0;
   }
 }
+
+int main() { return 0; }

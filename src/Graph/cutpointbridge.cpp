@@ -1,3 +1,7 @@
+// Copyright [2017] <dmnsn7@gmail.com>
+
+#include <bits/stdc++.h>
+
 const int MAXN = 10010;
 const int MAXM = 100010;
 struct Edge {
@@ -95,6 +99,10 @@ void solve(int N) {
   printf("%d critical links\n", bridge);
 }
 void init() {
-    tot = 0;
-    memset(head, -1, sizeof(head));
+  tot = 0;
+  memset(head, -1, sizeof(head));
+}
+
+int main() {
+  return 0;
 }

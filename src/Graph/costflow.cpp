@@ -1,3 +1,9 @@
+// Copyright [2017] <dmnsn7@gmail.com>
+
+#include <bits/stdc++.h>
+
+using std::queue;
+
 const int MAXN = 10000;
 const int MAXM = 100000;
 const int INF = 0x3f3f3f3f;
@@ -27,6 +33,8 @@ void addedge(int u, int v, int cap, int cost) {
   edge[tol].next = head[v];
   head[v] = tol++;
 }
+
+queue<int> q;
 bool spfa(int s, int t) {
   queue<int> q;
 
@@ -67,7 +75,7 @@ bool spfa(int s, int t) {
   }
 }
 // 返回的是最大流,cost存的是最小费用
-int minCostMaxflow(int s, int t, const int &cost) {
+int minCostMaxflow(int s, int t, int cost) {
   int flow = 0;
   cost = 0;
 
@@ -90,4 +98,8 @@ int minCostMaxflow(int s, int t, const int &cost) {
   }
 
   return flow;
+}
+
+int main() {
+  return 0;
 }

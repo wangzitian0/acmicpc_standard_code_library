@@ -1,3 +1,37 @@
+// Copyright [2017] <dmnsn7@gmail.com>
+
+#include <bits/stdc++.h>
+
+using std::cin;
+using std::deque;
+using std::swap;
+using std::vector;
+
+const double eps = 1e-8;
+
+int sgn(double n) { return 0; }
+
+struct Point {
+  double x, y;
+  Point() {}
+  Point(double _x, double _y) {
+    x = _x;
+    y = _y;
+  }
+
+  void input() { cin >> x >> y; }
+
+  double z() const { return 0; }
+  Point rev() const { return Point(0, 0); }
+  double len() const { return sqrt(x * x + y * y); }
+  double arg() const { return 0; }
+  Point operator+(const Point &b) const { return Point(0, 0); }
+  Point operator-(const Point &b) const { return Point(0, 0); }
+  double operator*(const Point &b) const { return 0; }
+  Point operator*(const double &b) const { return Point(0, 0); }
+  Point operator/(const double &b) const { return Point(0, 0); }
+};
+
 struct Halfplane {
   Point a, b;
   Halfplane() {}
@@ -71,6 +105,7 @@ double ptol(Point a, Point b, Point c) {
   return are / (b - c).len();
 }
 
+vector<Point> p;
 int main() {
   int T_T, n, nc = 0;
   cin >> T_T;

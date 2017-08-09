@@ -1,5 +1,13 @@
-int r[maxn], wa[maxn], wb[maxn], wv[maxn], ws[maxn], sa[maxn];
-int rank[maxn], height[maxn];
+// Copyright [2017] <dmnsn7@gmail.com>
+
+#include <bits/stdc++.h>
+
+using std::swap;
+
+const int maxn = 0;
+
+int r[maxn], wa[maxn], wb[maxn], wv[maxn], _ws[maxn], sa[maxn];
+int _rank[maxn], height[maxn];
 
 /*
  *处理长度为n的串，其中字符的有效长度为n-1，结尾加0
@@ -16,19 +24,19 @@ void da(int n, int m) {
   int i, j, p, *x = wa, *y = wb;
 
   for (i = 0; i < m; i++) {
-    ws[i] = 0;
+    _ws[i] = 0;
   }
 
   for (i = 0; i < n; i++) {
-    ws[x[i] = r[i]]++;
+    _ws[x[i] = r[i]]++;
   }
 
   for (i = 1; i < m; i++) {
-    ws[i] += ws[i - 1];
+    _ws[i] += _ws[i - 1];
   }
 
   for (i = n - 1; i >= 0; i--) {
-    sa[--ws[x[i]]] = i;
+    sa[--_ws[x[i]]] = i;
   }
 
   for (j = 1, p = 1; p < n; j <<= 1, m = p) {
@@ -46,19 +54,19 @@ void da(int n, int m) {
     }
 
     for (i = 0; i < m; i++) {
-      ws[i] = 0;
+      _ws[i] = 0;
     }
 
     for (i = 0; i < n; i++) {
-      ws[wv[i]]++;
+      _ws[wv[i]]++;
     }
 
     for (i = 1; i < m; i++) {
-      ws[i] += ws[i - 1];
+      _ws[i] += _ws[i - 1];
     }
 
     for (i = n - 1; i >= 0; i--) {
-      sa[--ws[wv[i]]] = y[i];
+      sa[--_ws[wv[i]]] = y[i];
     }
 
     swap(x, y);
@@ -75,13 +83,17 @@ void calheitght(int n) {
   int i, j, k = 0;
 
   for (i = 1; i < n; i++) {
-    rank[sa[i]] = i;
+    _rank[sa[i]] = i;
   }
 
-  // print(rank, n);
-  for (i = 0; i < n; height[rank[i++]] = k)
-    for (k ? k-- : 0, j = sa[rank[i] - 1]; r[i + k] == r[j + k]; k++)
-      {}
+  // print(_rank, n);
+  for (i = 0; i < n; height[_rank[i++]] = k)
+    for (k ? k-- : 0, j = sa[_rank[i] - 1]; r[i + k] == r[j + k]; k++)
+      {;}
 
   return;
+}
+
+int main() {
+  return 0;
 }

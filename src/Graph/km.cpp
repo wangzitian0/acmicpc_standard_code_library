@@ -1,3 +1,14 @@
+// Copyright [2017] <dmnsn7@gmail.com>
+
+#include <bits/stdc++.h>
+
+const int MAXN = 0;
+const int INF = 0;
+
+int ny, nx;
+int g[MAXN][MAXN], slack[MAXN], linker[MAXN], lx[MAXN], ly[MAXN], visx[MAXN],
+    visy[MAXN];
+
 bool DFS(int x) {
   visx[x] = true;
 
@@ -79,3 +90,5 @@ int KM() {
 
   return res;
 }
+
+int main() { return 0; }

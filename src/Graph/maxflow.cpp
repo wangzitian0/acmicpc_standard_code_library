@@ -1,5 +1,6 @@
+// Copyright [2017] <dmnsn7@gmail.com>
+
 #include <bits/stdc++.h>
-using std;
 
 const int MAXN = 100010;  // 点数的最大值
 const int MAXM = 400010;  // 边数的最大值
@@ -123,4 +124,8 @@ int sap(int ss, int tt, int N) {
   }
 
   return ans;
+}
+
+int main() {
+  return 0;
 }
